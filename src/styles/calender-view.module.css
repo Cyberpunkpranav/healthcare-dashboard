@@ -1,3 +1,7 @@
+.calender{
+  display: block;
+  height: fit-content;
+}
 
 .calender .months-scroll{
   display: flex;
@@ -23,7 +27,7 @@
   background-color: var(--secondary);
 }
 .day-time-card{
-  height: 20vh;
+  height: fit-content;
   min-height: 10rem;
   max-height: 12rem;
   width: 10%;

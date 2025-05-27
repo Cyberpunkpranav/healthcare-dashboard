@@ -1,5 +1,5 @@
 .sidebar{
-    max-width: 768px;
+    max-width: 20%;
     width: 18%;
     min-height: fit-content;
     box-sizing: border-box;
@@ -50,6 +50,14 @@
     font-weight: 500;
 }
 .sidebar .nav-links:hover i{
+    color: var(--primary);
+    font-weight: 500;
+}
+.sidebar .active{
+    color: var(--primary);
+    font-weight: 500;
+}
+.sidebar .active i{
     color: var(--primary);
     font-weight: 500;
 }

@@ -1,4 +1,11 @@
 .dashboard-container{
-  display: flex;
+  width: 100%;
+  max-width: 100%;
   min-height: 100vh;
+}
+@media screen and (min-width:1200px) {
+  .dashboard-container{
+  display: flex;
+
+  }
 }

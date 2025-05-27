@@ -118,13 +118,22 @@ const appointments=[
         time:"09:00-11:00",
         speciality:'Dentist',
         doctor:'Dr. williamson',
-        image:'white-tooth.png'
+        image:'white-tooth.png',
+        status:1
     },
     {
         time:"11:00-12:00",
         speciality:'Physiotherapy',
         doctor:'Dr. Djones',
-        image:"human-heart.png"
+        image:"human-bone.png",
+        status:0
+    },
+       {
+        time:"11:00-12:00",
+        speciality:'Cardiologist',
+        doctor:'Dr. Williams',
+        image:"human-heart.png",
+        status:0
     },
 ]
 

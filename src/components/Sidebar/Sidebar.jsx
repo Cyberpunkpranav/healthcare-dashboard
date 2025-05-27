@@ -13,7 +13,7 @@ const Sidebar = () => {
           <i className='bx bx-dashboard'></i>
 
           <ul>
-            <li className={styles['nav-links']}>
+            <li className={`${styles['nav-links']} ${styles.active}`}>
               <i className='bx bxs-dashboard'></i>
               <p>Dashboard</p>
             </li>

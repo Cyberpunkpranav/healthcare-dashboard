@@ -1,0 +1,30 @@
+.appointment-card{
+    width: clamp(10rem,15rem,20rem);
+    height: clamp(7rem, 14vh,16rem);
+    padding: 1.5rem;
+    box-sizing: border-box;
+    border-radius: 40px;
+    color: var(--primary);
+    background-color: var(--secondary);
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.appointment-card:hover{
+    background-color: var(--white);
+}
+.appointment-card .speciality{
+    font-weight: 600;
+}
+.appointment-card .time{
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+}
+.appointment-card img{
+    width: 2rem;
+    height: auto;
+}
+.appointment-card.active{
+    background-color: var(--primary);
+    color: var(--white);    
+}
