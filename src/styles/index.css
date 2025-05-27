@@ -87,6 +87,47 @@ body{
     background-color: var(--gray);
     opacity: 0.2;
 }
+.scroll {
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space: nowrap;
+  height: inherit;
+}
+.scroll-x {
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: inherit;
+  white-space: nowrap;
+
+}
+.scroll-y {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: inherit;
+  white-space: nowrap;
+
+}
+.scroll::-webkit-scrollbar {
+  height: 0rem;
+  width: 0rem;
+}
+
+.scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 65rem;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--gray);
+}
+.active{
+  background-color: var(--primary);
+  color: var(--white);
+}
 h1 {
   font-size: 24px;
 }

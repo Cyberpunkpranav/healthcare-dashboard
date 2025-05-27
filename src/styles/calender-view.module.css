@@ -1,0 +1,55 @@
+
+.calender .months-scroll{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+
+}
+.calender .months-scroll i{
+  font-size: 1.5rem;
+  margin-left:1rem;
+}
+.calender .day-time{
+  display: flex;
+  justify-content: space-between;
+  margin: 2vw 0vh;
+  color: var(--primary);
+}
+.calender .day-time.active{
+  background-color: var(--secondary);
+}
+.day-time-card{
+  height: 20vh;
+  min-height: 10rem;
+  max-height: 12rem;
+  width: 10%;
+  min-width: 4rem;
+  max-width: 7rem;
+  text-align: center;
+}
+
+.day-time-card .date{
+  margin-top: 0.5rem;
+  font-weight: 700;
+}
+.day-time-card .timeslots{
+  display: block;
+  max-height: 15rem;
+  margin-top: 1.5rem;
+}
+
+.day-time-card .timeslots .timeslot{
+  display: block;
+  padding: 0.5rem;
+  margin-top:10px;
+  border-radius: 15px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.day-time-card .timeslots .timeslot:hover{
+  background-color: var(--secondary);
+}

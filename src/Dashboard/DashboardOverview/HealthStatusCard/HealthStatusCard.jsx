@@ -5,21 +5,18 @@ import {
   CategoryScale,
   LinearScale,
   BarElement,
-  Tooltip,
-  Title,
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
-import { color } from 'chart.js/helpers';
+import styles from '../../../styles/health-status-card.module.css'
 
-// Register chart components
-ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Title);
+ChartJS.register(CategoryScale, LinearScale, BarElement);
 
 const HealthStatusCard = () => {
   const data = {
     labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
     datasets: [
       {
-        label: 'Gray',
+        label: 'option 1',
         data: [35, 30, 25, 30, 22, 35, 28],
         backgroundColor: '#D3D6DC',
         borderRadius: 10,
@@ -27,7 +24,7 @@ const HealthStatusCard = () => {
         categoryPercentage: 0.7,
       },
       {
-        label: 'Light Green',
+        label: 'option 2',
         data: [-30, -25, -20, 0, -20, -30, -25],
         backgroundColor: '#22d9e6',
         borderRadius: 10,
@@ -35,7 +32,7 @@ const HealthStatusCard = () => {
         categoryPercentage: 0.7,
       },
       {
-        label: 'Blue',
+        label: 'option 3',
         data: [0, 35, 30, -32, 26, 40, 33],
         backgroundColor: '#4A6CF7',
         borderRadius: 10,
@@ -87,7 +84,10 @@ const HealthStatusCard = () => {
   };
 
   return (
+      <div className={styles['patient-analytics']}>
+      <h4>Activity</h4>
       <Bar data={data} options={options} />
+      </div>
   );
 };
 

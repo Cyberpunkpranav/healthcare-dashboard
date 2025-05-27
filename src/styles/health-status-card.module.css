@@ -1,0 +1,15 @@
+
+
+.patient-analytics{
+    width:100%;
+    height: 25vh;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    margin-top: 1.5rem;
+    background-color: var(--background);
+    border-radius: 40px;
+
+}
+.patient-analytics h4{
+    font-weight: 500;
+}

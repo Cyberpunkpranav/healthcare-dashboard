@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from '../../styles/dashboardoverview.module.css'
 import HealthStatusCard from './HealthStatusCard/HealthStatusCard'
+import AnatomySection from './AnatomySection/AnatomySection'
+import CalenderView from '../CalenderView/CalenderView'
 
 const DashboardOverview = () => {
   return (
     <div className={styles['dashboard-section']}>
-        <div className={styles.section1}>
+          <div className={styles.section1}>
           <div className={styles.search}>
+            <div style={{display:"flex", alignItems:"center"}}>
+            <i className='bx bx-search'></i>
           <input placeholder='Search'/>
+            </div>
+
           <i class='bx bxs-bell-ring' ></i>
           </div>
           <div className={styles.heading}>
@@ -18,47 +24,18 @@ const DashboardOverview = () => {
             <option value="">this year</option>
           </select>
           </div>
-          <div className={styles['details-container']}>
-          <div className={styles['patient-anatomy']}>
-          <i className='bx bx-plus-circle'></i> 
-          <img src='/images/human-anatomy.png'/>
-          </div>
-          <div className={styles['patient-details']}>
-            <div className={styles['patient-organs']}>
-              <div style={{display:"flex",alignItems:"center"}}>
-              <img src='/images/human-heart.png' alt=""/>
-              <h4>Heart</h4>
-              </div>
-
-              <h6>Date: 4 Oct 2024</h6>
-            </div>
-             <div className={styles['patient-organs']}>
-              <div style={{display:"flex",alignItems:"center"}}>
-              <img src="/images/human-bone.png" alt="" />
-               <h4>Bone</h4>
-              </div>
-
-               <h6>Date: 4 Oct 2024</h6>
-             </div>
-            <div className={styles['patient-organs']}>
-              <div style={{display:"flex",alignItems:"center"}}>
-              <img src="/images/lung.png" alt="" />
-              <h4>Lungs</h4>
-              </div>
-              <h6>Date: 4 Oct 2024</h6>
-            </div>
-            <div className={styles['more-details']}>
-            <small>details</small>
-            <i class='bx bx-right-arrow-alt'></i>
-            </div>
-          </div>
-          </div>
-          <div className={styles['patient-analytics']}>
-            <h4>Activity</h4>
+            <AnatomySection/>
             <HealthStatusCard/>
           </div>
+        <div className={styles.section2}>
+          <div className={styles['other-details']}>
+          <div className={styles['user-profile']}>
+          <i className='bx bxs-user'></i>
+          </div>
+          <div className={styles['add-more']}><i className='bx bx-plus'></i></div>
+          </div>
+          <CalenderView/>
         </div>
-        <div className={styles.section2}></div>
     </div>
   )
 }
