@@ -28,3 +28,9 @@
 .us-card:hover{
     background-color: var(--white);
 }
+@media screen and (max-width:1200px) {
+    .us-cards{
+        row-gap:1rem;
+        flex-wrap: wrap;
+    }
+}

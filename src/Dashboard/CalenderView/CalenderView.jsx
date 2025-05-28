@@ -34,7 +34,7 @@ const CalenderView = () => {
     //         ))}
     //     </div>
     //     </div>
-    <section className={styles.calender}>
+    <section className={`${styles.calender} `}>
       <div className={styles['months-scroll']}>
       <h5>October 2021</h5>
       <div style={{display:"flex", alignItems:"center"}}>
@@ -42,7 +42,7 @@ const CalenderView = () => {
         <i className='bx bx-arrow-from-left'></i>
       </div>
       </div>
-      <div className={styles['day-time']}>
+      <div className={`${styles['day-time']} scroll`}>
         {
           calender.map((data,i)=>(
           <div style={{opacity:1/(i/2)}} className={styles['day-time-card']}>

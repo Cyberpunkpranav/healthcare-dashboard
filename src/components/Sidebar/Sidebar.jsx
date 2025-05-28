@@ -7,6 +7,7 @@ const Sidebar = () => {
       <div className={styles.logo}>
         <img alt='logo' src='/images/Healthcare-logo.png' />
       </div>
+      <div className={styles.breadcrumb}><i className='bx bx-menu'></i></div>
       <div className={styles.navigation}>
         <div>
           <small>General</small>
